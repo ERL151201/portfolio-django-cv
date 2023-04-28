@@ -7,4 +7,4 @@ set -o errexit
 
 python manage.py collectstatic --no-input
 python manage.py migrate
-gunicorn mysite.wsgi:application
+gunicorn django_portfolio.wsgi:application
